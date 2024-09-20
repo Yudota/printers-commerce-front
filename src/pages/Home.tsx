@@ -1,9 +1,16 @@
-import { Link } from "react-router-dom";
+import { ProductCard } from "../components/ProductCard/ProductCard.component";
 
 export const Home = () => {
   return (
     <>
-      Home<Link to="/home2"></Link>
+      <ProductCard
+        imageUrl={""}
+        price={""}
+        description={""}
+        onAddToCart={function (): void {
+          throw new Error("Function not implemented.");
+        }}
+      />
     </>
   );
 };
